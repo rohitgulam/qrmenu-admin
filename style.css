@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+:root{
+    --primary-color: #8ac926; 
+    --primary-light: #b6f05a80;
+    --primary-hover: #6aac00;
+    --light-gray: rgb(226, 226, 226);
+}
+
+body{
+    background-color: #F7FAFC;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+.btn{
+    color: #fff;
+    background-color: var(--primary-color);
+    transition: background-color 200ms ease-in-out;
+}
+
+.btn, ul li a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex: 1;
+    border-radius: 6px;
+    padding: 10px 24px;
+    cursor: pointer;
+    
+}
+
+.btn i, ul li a i{
+    padding-right: 20px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    color: #111;
+    /* border: thin solid var(--light-gray); */
+}
+
+ul li a:hover{
+    background-color: var(--primary-light);
+}
+
+.btn:hover{
+    background-color: var(--primary-hover);
+}
+
+.btn i{
+    font-size: 24px;
+}
+
+.sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 260px;
+    border-right: thin solid var(--light-gray);
+    background-color: #fff;
+    padding: 20px  20px;
+}
+
+.sidebar .sidebar-items{
+    margin: 40px auto;
+    /* width: 100%; */
+    /* background-color: red; */
+}
+
+.sidebar .sidebar-items .sidebar-menu{
+    margin-top: 60px;
+}
+
+
+.main-content{
+    position: absolute;
+    width: calc(100% - 260px);
+    left: 260px;
+    padding: 20px
+}
+
+
+/* CREATE USER PAGE */
+
+input{
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid var(--light-gray);
+}
+
+#form{
+    padding: 10px;
+    margin: 10px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    
+    
+}
+
+.input-group label{
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+
+/* CREATE USER PAGE ENDS*/
+
+
+/* USERS PAGE */
+
+.grid-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 4;
+}
+
+.grid-cards .card{
+    background-color: rgba(211, 154, 244, 0.2);
+    border-radius: 4px;
+    border: 2px solid red;
+}
+/* USERS PAGE ENDS */
+
+
