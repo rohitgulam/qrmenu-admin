@@ -329,7 +329,7 @@ function createUser($conn, $username, $name, $rest_name, $email, $password){
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
-    header("location: createuser.php?error=none");
+    header("location: ../createuser.php?error=none");
     exit();
 }
 

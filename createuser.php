@@ -3,7 +3,7 @@
 ?>
 
     <main class="main-content">
-        <form id="form" action="signupuser.inc.php" method="post">
+        <form id="form" action="includes/signupuser.inc.php" method="post">
             <div class="input-group">
                 <label for="username">Username</label>
                 <input id="username" type="text" name="username" placeholder="Username">
